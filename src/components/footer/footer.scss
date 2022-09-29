@@ -1,0 +1,38 @@
+@import "../scss/color";
+
+.footer {
+    
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    background: $primary-color;
+
+    .footer__logo {
+      width: 400px;
+      margin-bottom: 5px;
+      margin-top: 50px;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .footer__menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100px;
+    }
+
+    .copyright {
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      color: #fff;
+      letter-spacing: 1px;
+    }
+  }
+}

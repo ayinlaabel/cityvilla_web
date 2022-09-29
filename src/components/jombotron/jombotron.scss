@@ -1,0 +1,39 @@
+@import "../scss/color";
+
+.j__container {
+  height: 250px;
+  width: 100%;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)),
+    url(../images/j__bg.jpg);
+  background-size: cover;
+  background-position-y: -400px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.j__content {
+  position: relative;
+  
+  .title {
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: $secondary-color;
+
+    span {
+      font-size: 3rem;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    background: $secondary-color;
+    margin: 0px auto;
+  }
+}
