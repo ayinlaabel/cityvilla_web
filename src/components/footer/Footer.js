@@ -14,7 +14,7 @@ function Footer() {
           <Link to="/" className="menu__item">
             Home
           </Link>
-          <Link to="/" className="menu__item">
+          <Link to="/about-us" className="menu__item">
             About us
           </Link>
           <Link to="/" className="menu__item">
