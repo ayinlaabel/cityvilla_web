@@ -38,8 +38,6 @@ body {
     text-transform: uppercase;
     color: $secondary-color;
 
-    
-
     & span {
       font-size: 2.5rem;
       font-weight: 400;
@@ -67,3 +65,5 @@ body {
     }
   }
 }
+
+@import "./mediaQueries";

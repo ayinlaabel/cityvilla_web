@@ -1,7 +1,6 @@
 @import "../scss/color";
 
 .footer {
-    
   &__container {
     display: flex;
     flex-direction: column;
@@ -36,3 +35,5 @@
     }
   }
 }
+
+@import "../scss/mediaQueries";
