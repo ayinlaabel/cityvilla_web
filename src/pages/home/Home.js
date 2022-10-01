@@ -1,16 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./home.scss";
 import aboutImage from "../../components/images/j__bg.jpg";
 import Hero from "../../components/hero/Hero";
 import Card from "../../components/card/Card";
 import Newsletter from "../../components/newsletter/Newsletter";
-const reload = () => {
-  window.location.reload();
-};
 
 function Home() {
- 
-
   return (
     <div>
       <Hero />

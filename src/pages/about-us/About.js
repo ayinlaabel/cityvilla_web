@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./about.scss";
 import Jombotron from "../../components/jombotron/Jombotron";
 import Card from "../../components/card/Card.js";
