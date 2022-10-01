@@ -14,6 +14,7 @@
     left: 0;
     z-index: 10000;
     width: 100%;
+
     .desktop__menu {
       display: none;
     }
@@ -24,7 +25,7 @@
       justify-content: space-between;
       background: $primary-color;
       width: 100%;
-      height: 50px;
+      height: vh100;
       padding: 0 80px 0 20px;
       transition: all 0.5s ease-in-out;
 
@@ -32,15 +33,37 @@
         position: absolute;
         top: 15px;
         right: 20px;
+        transition: all 0.5s ease-in-out;
 
         .btn__line {
           height: 2px;
-          width: 30px;
+          width: 28px;
           background: #fff;
+          transition: all 0.5s ease-in-out;
+
+          &.show {
+
+            &:nth-child(1) {
+              transform: rotate(45deg) translate(4px, 3px);
+            }
+
+            &:nth-child(2) {
+              background: red;
+              opacity: 0;
+            }
+
+            &:nth-child(3) {
+              transform: rotate(-45deg) translate(7px, -6px);
+            }
+          }
 
           &:not(:last-child) {
             margin-bottom: 5px;
           }
+        }
+
+        &.show {
+          transform: rotate(180deg);
         }
       }
       .menu_m {
@@ -227,6 +250,7 @@
     height: 100%;
     .mission,
     .vision {
+      padding: 80px 50px;
       text-align: center;
       width: 100%;
     }

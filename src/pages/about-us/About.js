@@ -1,10 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./about.scss";
 import Jombotron from "../../components/jombotron/Jombotron";
 import Card from "../../components/card/Card.js";
 
 function About() {
-
   return (
     <div>
       <Jombotron />

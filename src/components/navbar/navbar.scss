@@ -1,6 +1,11 @@
 @import "../scss/color";
 
 .container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+
   .desktop__menu {
     display: flex;
     align-items: center;

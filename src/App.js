@@ -7,7 +7,8 @@ import About from "./pages/about-us/About";
 
 function App() {
   return (
-    <Router>
+    
+    <Router forceRefresh={true}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
