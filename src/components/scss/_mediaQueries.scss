@@ -4,7 +4,7 @@
 // Small devices (landscape phones, 576px and up)
 @media only screen and (max-width: 576px) {
   .container {
-    position: absolute;
+    position: sticky;
     top: 0;
     left: 0;
     z-index: 10000;
@@ -56,10 +56,6 @@
       }
 
       &.show {
-        .logo {
-          height: 600px !important;
-        }
-
         position: absolute;
         top: 0;
         left: 0;
