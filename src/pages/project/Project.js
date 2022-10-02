@@ -1,6 +1,5 @@
 import React from "react";
 import "./project.scss";
-import icon1 from "../../components/images/cardIcon-1.jpg";
 function Project() {
   return (
     <div>
