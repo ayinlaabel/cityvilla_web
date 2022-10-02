@@ -43,10 +43,10 @@ function Navbar() {
           <Link to="/about-us" className="menu__item">
             About us
           </Link>
-          <Link to="/" className="menu__item">
+          <Link to="/projects" className="menu__item">
             Projects
           </Link>
-          <Link to="/" className="menu__item">
+          <Link to="/contact-us" className="menu__item">
             Contact us
           </Link>
         </div>
@@ -67,10 +67,10 @@ function Navbar() {
           <a href="/about-us" className="menu__item">
             About us
           </a>
-          <a href="/" className="menu__item">
+          <a href="/projects" className="menu__item">
             Projects
           </a>
-          <a href="/" className="menu__item">
+          <a href="/contact-us" className="menu__item">
             Contact us
           </a>
         </div>

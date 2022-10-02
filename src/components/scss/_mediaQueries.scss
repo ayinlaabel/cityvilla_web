@@ -255,6 +255,15 @@
       width: 100%;
     }
   }
+
+  .project{
+    margin: 10px 30px;
+
+    .service__card{
+      width: 150px;
+      height: 150px;
+    }
+  }
 }
 
 // Medium devices (tablets, 768px and up)

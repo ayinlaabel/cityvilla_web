@@ -1,0 +1,80 @@
+@import "../../components/scss/color";
+
+.project {
+  margin: 50px 300px;
+  &__header {
+    &--h2 {
+      font-size: 2rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: $primary-color;
+    }
+  }
+
+  &__service {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .card-1 {
+      background: linear-gradient(rgba(1, 14, 0, 0.9), rgba(1, 14, 0, 0.9)),
+        url(../../components/images/cardIcon-2.jpg);
+      background-size: cover;
+      &:hover {
+        background: linear-gradient(
+            rgba(251, 176, 0, 0.9),
+            rgba(251, 176, 0, 0.9)
+          ),
+          url(../../components/images/cardIcon-2.jpg);
+
+        .service__card-title {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .card-2 {
+      background: linear-gradient(rgba(1, 14, 0, 0.9), rgba(1, 14, 0, 0.9)),
+        url(../../components/images/cardIcon-1.jpg);
+      background-size: cover;
+      &:hover {
+        background: linear-gradient(
+            rgba(251, 176, 0, 0.9),
+            rgba(251, 176, 0, 0.9)
+          ),
+          url(../../components/images/cardIcon-1.jpg);
+
+        .service__card-title {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .service__card {
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 250px;
+      height: 250px;
+      border-radius: 8px;
+      //   background: $primary-color;
+      margin: 10px;
+      transition: all 0.7s ease-in-out;
+
+      &-title {
+        margin: 0 20px;
+        text-align: center;
+        font-size: 1.8rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+        line-height: 1;
+        transition: all 0.7s ease-in-out;
+      }
+    }
+  }
+}
+
+@import "../../components/scss/mediaQueries";

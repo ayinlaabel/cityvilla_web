@@ -4,10 +4,14 @@ import aboutImage from "../../components/images/j__bg.jpg";
 import Hero from "../../components/hero/Hero";
 import Card from "../../components/card/Card";
 import Newsletter from "../../components/newsletter/Newsletter";
+import { Helmet } from "react-helmet";
 
 function Home() {
   return (
     <div>
+      <Helmet>
+        <title> Home - City Villa Real Estate</title>
+      </Helmet>
       <Hero />
       <div className="about">
         <div className="about__image">

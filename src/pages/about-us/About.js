@@ -2,10 +2,14 @@ import React from "react";
 import "./about.scss";
 import Jombotron from "../../components/jombotron/Jombotron";
 import Card from "../../components/card/Card.js";
+import { Helmet } from "react-helmet";
 
 function About() {
   return (
     <div>
+      <Helmet>
+        <title>About - City Villa Real Estate</title>
+      </Helmet>
       <Jombotron />
       <div className="a">
         <div className="header">
