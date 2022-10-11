@@ -8,8 +8,7 @@ function Newsletter() {
         Subscribe to <span>Our Newsletter</span>
       </div>
       <div className="sub__title">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti
-        id ducimus ipsa officia aspernatur fuga laudantium debitis rerum saepe.
+      Submit your email in the box below to always get real-time update on latest offers.
       </div>
       <div className="group__input">
         <div className="input__field">

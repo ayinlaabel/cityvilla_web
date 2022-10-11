@@ -6,8 +6,8 @@ function Hero() {
     <div className="hero">
         <div className="hero__container">
             <div className="content">
-                <h2 className="title">We are on a mission</h2>
-                <h4 className="sub__title">Changing the way people <span>finds home.</span></h4>
+                <h2 className="title">We build the imagination</h2>
+                <h4 className="sub__title"><span>you live</span> in it. </h4>
             </div>
         </div>
     </div>

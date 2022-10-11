@@ -19,6 +19,7 @@
     }
   }
   .content {
+    z-index: 1;
     .content__title {
       position: relative;
       display: block;
@@ -66,10 +67,12 @@
   .content {
     padding-top: 50px;
     padding-bottom: 30px;
+
     &__title {
       display: flex;
       align-items: center;
       justify-content: center;
+      z-index: 1;
 
       & span {
         margin-left: 10px;
@@ -78,6 +81,8 @@
 
     &__body {
       display: flex;
+      align-items: center;
+      justify-content: center;
       margin: 5px 60px;
     }
   }

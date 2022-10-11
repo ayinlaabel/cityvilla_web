@@ -166,8 +166,10 @@
     }
 
     .sub__title {
-      font-size: 0.7rem;
+      font-size: 0.9rem;
       margin: 10px 20px;
+      font-weight: 600;
+      font-style: italic;
     }
 
     .group__input {
@@ -177,7 +179,7 @@
       padding: 0 20px;
       margin: 0 10px;
 
-      .input__ input[type="text"] {
+      .input__field input[type="text"] {
         margin-bottom: 10px;
         font-weight: 400;
       }
@@ -227,6 +229,11 @@
         }
       }
     }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+    }
   }
 
   .xcontent {
@@ -256,12 +263,43 @@
     }
   }
 
-  .project{
+  .project {
     margin: 10px 30px;
 
-    .service__card{
+    .service__card {
       width: 150px;
       height: 150px;
+    }
+  }
+
+  .map {
+    margin: 10px !important;
+
+    .header {
+      .divider {
+        .empty__divider {
+          width: 150px !important;
+        }
+      }
+    }
+  }
+
+  .location {
+    display: flex;
+    align-items: center !important;
+    justify-content: center !important;
+    .contact {
+      flex-direction: column;
+      align-items: center !important;
+      justify-content: space-evenly !important;
+      margin: 0px 50px;
+
+      .address,
+      .email,
+      .phone {
+        margin: 10px;
+        width: 100% !important;
+      }
     }
   }
 }

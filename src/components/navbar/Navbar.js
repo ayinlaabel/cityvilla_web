@@ -2,8 +2,11 @@ import React, { useRef } from "react";
 import "./navbar.scss";
 import logo from "../images/logo/cityvilla__logo.png";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 function Navbar() {
+  const isActive = useSelector((state) => state.navbar);
+
   const ref = useRef(null);
   let menuOpen = false;
 
@@ -37,16 +40,16 @@ function Navbar() {
           <img src={logo} alt="City Villa Logo" />
         </div>
         <div className="menu">
-          <Link to="/" className="menu__item active">
+          <Link to="/" className={"menu__item " + isActive.home}>
             Home
           </Link>
-          <Link to="/about-us" className="menu__item">
+          <Link to="/about-us" className={"menu__item " + isActive.about}>
             About us
           </Link>
-          <Link to="/projects" className="menu__item">
+          <Link to="/projects" className={"menu__item " + isActive.project}>
             Projects
           </Link>
-          <Link to="/contact-us" className="menu__item">
+          <Link to="/contact-us" className={"menu__item " + isActive.contact}>
             Contact us
           </Link>
         </div>
@@ -61,16 +64,16 @@ function Navbar() {
           <div ref={ref} className="btn__line"></div>
         </div>
         <div ref={ref} className="menu_m">
-          <a href="/" className="menu__item active">
+          <a href="/" className={"menu__item " + isActive.home}>
             Home
           </a>
-          <a href="/about-us" className="menu__item">
+          <a href="/about-us" className={"menu__item " + isActive.about}>
             About us
           </a>
-          <a href="/projects" className="menu__item">
+          <a href="/projects" className={"menu__item " + isActive.project}>
             Projects
           </a>
-          <a href="/contact-us" className="menu__item">
+          <a href="/contact-us" className={"menu__item " + isActive.contact}>
             Contact us
           </a>
         </div>
