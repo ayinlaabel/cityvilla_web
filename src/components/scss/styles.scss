@@ -17,7 +17,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #fff;
   margin: 10px 0;
   width: 160px;
   height: 40px;
@@ -25,7 +24,11 @@ body {
   font-size: 0.8rem;
   font-weight: 400;
   border-radius: 4px;
-  background: $primary-color;
+  
+  &.btn__primary{
+    color: #fff;
+    background: $primary-color;
+  }
 }
 
 .content {
@@ -64,6 +67,14 @@ body {
       }
     }
   }
+}
+
+.link{
+  text-decoration: none;
+  display: block;
+  color: inherit;
+  width: inherit;
+  text-align: center;
 }
 
 @import "./mediaQueries";

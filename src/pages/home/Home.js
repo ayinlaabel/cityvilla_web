@@ -54,7 +54,11 @@ function Home() {
               We consider ourselves to be industry leaders since we provide our
               clients with homes that are both competitive and reasonable.
             </p>
-            <div className="btn btn__primary">Read more</div>
+            <div className="btn btn__primary">
+              <a href="/about-us" className="link">
+                Read more
+              </a>
+            </div>
           </div>
         </div>
       </div>

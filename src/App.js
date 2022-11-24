@@ -6,6 +6,7 @@ import Footer from "./components/footer/Footer";
 import About from "./pages/about-us/About";
 import Project from "./pages/project/Project";
 import Contact from "./pages/contact-us/Contact";
+import Details from "./pages/details/Details";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/about-us" element={<About />} />
         <Route path="/projects" element={<Project />} />
         <Route path="/contact-us" element={<Contact />} />
+        <Route path="/estate/oyo-estate" element={<Details />} />
       </Routes>
       <Footer />
     </Router>

@@ -6,10 +6,12 @@ export const data = [
     title: "5 BEDROOM DUPLEX",
     location: "Oyo State, Nigeria",
     image: oyo,
+    path:"/estate/oyo-estate"
   },
   {
     title: "3 BEDROOM DUPLEX",
-    location: "Abuja State, Nigeria",
+    location: "Abuja, FCT, Nigeria",
     image: abuja,
+    path:""
   },
 ];
