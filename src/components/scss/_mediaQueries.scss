@@ -102,9 +102,23 @@
     height: 40vh;
 
     &__container {
+      flex-direction: row;
       & .content {
-        & .title {
+        & .Typewriter__wrapper,
+        & .Typewriter__cursor {
+          display: flex;
+          align-items: center;
+          justify-content: center;
           font-size: 2rem;
+
+          & span {
+            font-size: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $primary-color;
+            background: $secondary-color;
+            padding: 8px 5px;
+          }
         }
 
         & .sub__title {
@@ -195,7 +209,8 @@
 
   .footer {
     &__container {
-      height: 200px;
+      height: 100%;
+      padding: 20px;
       justify-content: flex-start;
 
       .footer__logo {
@@ -299,6 +314,45 @@
       .phone {
         margin: 10px;
         width: 100% !important;
+      }
+    }
+  }
+
+  .details {
+    align-items: center;
+    justify-content: center;
+    height: 100% !important;
+    &__container {
+      flex-direction: column;
+    }
+
+    &__content {
+      width: 100%;
+
+      .sub {
+        &__body {
+          flex-direction: column;
+          height: 100%;
+
+          & .abc,
+          & .xyz {
+            width: 100%;
+          }
+
+          & .abc {
+            margin-bottom: 30px;
+
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .mno {
+      &::after {
+        display: none;
       }
     }
   }

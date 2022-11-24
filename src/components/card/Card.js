@@ -17,7 +17,8 @@ function Card({ data, noBtn }) {
           <div className="card__content">
             <div className="card__title">{item.title}</div>
             <div className="card__title-sub">{item.location}</div>
-            {!noBtn && <button className="btn btn__primary">Check out</button>}
+            {!noBtn && <div className="btn btn__primary">
+              <a href={item.path} className="link">Check out</a></div>}
           </div>
         </div>
       ))}

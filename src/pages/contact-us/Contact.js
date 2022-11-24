@@ -58,11 +58,12 @@ function Contact() {
             </div>
             <div className="email">
               <div className="header">Email</div>
-              <div className="content">info@cityvilla.com.ng</div>
+              <div className="content"> cityvillainfo@gmail.com</div>
             </div>
             <div className="phone">
               <div className="header">Phone</div>
               <div className="content">+234 701 111 1463</div>
+              <div className="content">+234 701 111 1493</div>
             </div>
           </div>
         </div>

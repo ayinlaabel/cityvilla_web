@@ -10,7 +10,7 @@ export const teams = [
     image: md,
   },
   {
-    title: "Promise Analechi",
+    title: "Oyedokun Oyerinde",
     location: "Builder",
     image: bd,
   },
@@ -20,7 +20,7 @@ export const teams = [
     image: ce,
   },
   {
-    title: "Mofikoya Ayobami",
+    title: "Azeez Taofik",
     location: "Architect",
     image: ac,
   },
