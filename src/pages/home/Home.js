@@ -2,12 +2,14 @@ import React, { useEffect } from "react";
 import "./home.scss";
 import aboutImage from "../../components/images/j__bg.jpg";
 import Hero from "../../components/hero/Hero";
-import Card from "../../components/card/Card";
+// import Card from "../../components/card/Card";
 import Newsletter from "../../components/newsletter/Newsletter";
 import { Helmet } from "react-helmet";
 import { data } from "../../data/nowselling";
 import { useDispatch } from "react-redux";
 import { active } from "../../redux/navbarSlice";
+import CardImage from "../../components/card/CardImage";
+import cityvillaVideo from "../../components/videos/cityvilla_video.mp4";
 
 function Home() {
   const dispatch = useDispatch();
@@ -68,13 +70,16 @@ function Home() {
             Now <span> Selling</span>
           </div>
           <div className="content__body">
-            <Card data={data} />
+            <CardImage data={data} />
           </div>
         </div>
       </div>
       <div className="newsletter">
         <Newsletter />
       </div>
+      <video className="video" autoPlay muted loop>
+        <source src={cityvillaVideo} type="video/mp4" />
+        </video>
     </div>
   );
 }

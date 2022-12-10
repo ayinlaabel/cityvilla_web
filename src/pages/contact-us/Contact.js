@@ -43,7 +43,9 @@ function Contact() {
         Thank you for your interest in working with <strong>CITY VILLA</strong>. We look forward to receiving your information.
         </div>
         <div className="map__content">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252793.4706045241!2d3.9883897328125!3d8.111869899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10370d7ee27da055%3A0xc7bf746136ffe628!2sCity%20Villa%20Homes!5e0!3m2!1sen!2sng!4v1670711497858!5m2!1sen!2sng"></iframe>
+        <iframe 
+        title="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d252793.4706045241!2d3.9883897328125!3d8.111869899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10370d7ee27da055%3A0xc7bf746136ffe628!2sCity%20Villa%20Homes!5e0!3m2!1sen!2sng!4v1670711497858!5m2!1sen!2sng"></iframe>
         </div>
         <div className="location">
           <div className="contact">

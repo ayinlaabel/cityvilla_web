@@ -24,8 +24,8 @@ body {
   font-size: 0.8rem;
   font-weight: 400;
   border-radius: 4px;
-  
-  &.btn__primary{
+
+  &.btn__primary {
     color: #fff;
     background: $primary-color;
   }
@@ -69,12 +69,16 @@ body {
   }
 }
 
-.link{
+.link {
   text-decoration: none;
   display: block;
   color: inherit;
   width: inherit;
   text-align: center;
+}
+
+.video {
+  width: 100%;
 }
 
 @import "./mediaQueries";
