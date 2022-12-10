@@ -1,14 +1,21 @@
 .card {
-  margin: 0 10px;
-  min-width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 10px 0 10px;
+  min-width: 400px;
+  height: 100px;
+  border-radius: 8px;
+  border: 2px solid #444;
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    height: 100%;
   }
-  
+
   &__image {
     width: 100%;
     height: 250px;
@@ -21,11 +28,13 @@
     align-items: center;
     justify-content: center;
     margin: 5px;
+    padding: 15px;
   }
 
   &__title {
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
 
     &-sub {
       font-style: italic;
