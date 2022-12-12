@@ -5,6 +5,7 @@ function CardImage({ data, noBtn }) {
     <div className="card__container">
       {data.map((item, index) => (
         <div className="cardimage" key={index}>
+        <div style={{ background:`url(`+item.image+`)`, width:"300px", height:"200px", backgroundSize: "cover" }}></div>
           <div className="image__content">
             <div className="card__title">{item.title}</div>
             <div className="card__title-sub">{item.location}</div>
