@@ -1,13 +1,12 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
+// import Typewriter from "typewriter-effect";
 import "./hero.scss";
 
 function Hero() {
-  
   return (
     <div className="hero">
       <div className="hero__container">
-        <div className="content">
+        {/* <div className="content">
         <Typewriter
           options={{
             autoStart: true,
@@ -26,6 +25,25 @@ function Hero() {
         />
           
           
+        </div> */}
+        <div className="content">
+          <h1>Find your next home</h1>
+          <div className="input__search">
+            <input type="text" placeholder="Search by location" />
+            <select name="" id="">
+              <option value="">Type</option>
+            </select>
+            <select name="" id="">
+              <option value="">Bed</option>
+            </select>
+            <select name="" id="">
+              <option value="">Min Price</option>
+            </select>
+            <select name="" id="">
+              <option value="">Max Price</option>
+            </select>
+            <button>Search</button>
+          </div>
         </div>
       </div>
     </div>

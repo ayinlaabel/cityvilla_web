@@ -17,20 +17,33 @@
     padding: 0 80px 0 20px;
 
     & .menu {
-  
-      &__item {
-        font-size: .8rem;
+      display: inline;
+
+      &,
+      & .menu__item {
+        display: inline-block;
+        text-decoration: none;
+
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+      }
+
+      &__link,
+      a {
+        text-decoration: none;
+        font-size: 0.8rem;
         text-transform: uppercase;
         text-decoration: none;
         color: #444;
         font-weight: 500;
         transition: all 0.5s ease-in-out;
-    
+
         &.active {
           position: relative;
           color: $secondary-color;
           font-weight: 600;
-    
+
           &::after {
             content: "";
             position: absolute;
@@ -42,11 +55,11 @@
             background: $secondary-color;
           }
         }
-    
+
         &:not(:last-child) {
           margin-right: 30px;
         }
-    
+
         &:hover {
           color: #fff;
         }
@@ -58,20 +71,19 @@
     display: none;
 
     .menu {
-  
       &__item {
-        font-size: .9rem;
+        font-size: 0.9rem;
         text-transform: uppercase;
         text-decoration: none;
         color: #444;
         font-weight: 500;
         transition: all 0.5s ease-in-out;
-    
+
         &.active {
           position: relative;
           color: $secondary-color;
           font-weight: 600;
-    
+
           &::after {
             content: "";
             position: absolute;
@@ -83,11 +95,11 @@
             background: $secondary-color;
           }
         }
-    
+
         &:not(:last-child) {
           margin-right: 15px;
         }
-    
+
         &:hover {
           color: #fff;
         }
@@ -103,7 +115,5 @@
     width: 100%;
   }
 }
-
-
 
 @import "../scss/mediaQueries";

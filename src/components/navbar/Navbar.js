@@ -1,11 +1,12 @@
 import React, { useRef } from "react";
 import "./navbar.scss";
 import logo from "../images/logo/cityvilla__logo.png";
-import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 function Navbar() {
   const isActive = useSelector((state) => state.navbar);
+
+  console.log(isActive);
 
   const ref = useRef(null);
   let menuOpen = false;
@@ -34,25 +35,43 @@ function Navbar() {
     }
   };
   return (
-    <div className="container">
+    <nav className="container">
       <div className="desktop__menu">
         <div className="logo">
           <img src={logo} alt="City Villa Logo" />
         </div>
-        <div className="menu">
-          <Link to="/" className={"menu__item " + isActive.home}>
-            Home
-          </Link>
-          <Link to="/about-us" className={"menu__item " + isActive.about}>
-            About us
-          </Link>
-          <Link to="/projects" className={"menu__item " + isActive.project}>
-            Projects
-          </Link>
-          <Link to="/contact-us" className={"menu__item " + isActive.contact}>
-            Contact us
-          </Link>
-        </div>
+        <ul className="menu">
+          <li className="menu__item">
+            <a href="/" className={"menu__link " + isActive.home}>
+              Home
+            </a>
+          </li>
+          <li className="menu__item">
+            <a href="/about-us" className={"menu__link " + isActive.about}>
+              About us
+            </a>
+          </li>
+          <li className="menu__item">
+            <a href="/projects" className={"menu__link " + isActive.project}>
+              Projects
+            </a>
+          </li>
+          <li className="menu__item">
+            <a href="/contact-us" className={"menu__link " + isActive.contact}>
+              Contact us
+            </a>
+          </li>
+          <li className="menu__item">
+            <a href="/gallery" className={"menu__link " + isActive.gallery}>
+              Gallery
+            </a>
+          </li>
+          <li className="menu__item">
+            <a href="/contact-us" className={"menu__link " + isActive.blog}>
+              Blog
+            </a>
+          </li>
+        </ul>
       </div>
       <div ref={ref} className="mobile__menu">
         <div className="logo">
@@ -78,7 +97,7 @@ function Navbar() {
           </a>
         </div>
       </div>
-    </div>
+    </nav>
   );
 }
 

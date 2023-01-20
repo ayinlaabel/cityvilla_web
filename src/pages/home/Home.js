@@ -27,7 +27,7 @@ function Home() {
   return (
     <div>
       <Helmet>
-        <title> Home - City Villa Real Estate</title>
+        <title>Real Estate in Nigeria || City Villa Real Estate</title>
       </Helmet>
       <Hero />
       <div className="about">
@@ -77,9 +77,6 @@ function Home() {
       <div className="newsletter">
         <Newsletter />
       </div>
-      <video className="video" autoPlay muted loop>
-        <source src={cityvillaVideo} type="video/mp4" />
-        </video>
     </div>
   );
 }

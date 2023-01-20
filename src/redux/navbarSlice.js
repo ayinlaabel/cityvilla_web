@@ -7,6 +7,8 @@ export const navbarSlice = createSlice({
     about: "",
     contact: "",
     project: "",
+    gallery: "",
+    blog: "",
   },
   reducers: {
     active: (state, action) => {
@@ -14,6 +16,8 @@ export const navbarSlice = createSlice({
       state.about = action.payload.about;
       state.project = action.payload.project;
       state.contact = action.payload.contact;
+      state.gallery = action.payload.gallery;
+      state.blog = action.payload.blog;
     },
   },
 });

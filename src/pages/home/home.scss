@@ -8,6 +8,10 @@
 
   &__image,
   & .content {
+    & img {
+      height: 100%;
+      width: auto;
+    }
     width: 50%;
     height: 400px;
   }
