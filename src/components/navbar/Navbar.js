@@ -95,6 +95,9 @@ function Navbar() {
           <a href="/contact-us" className={"menu__item " + isActive.contact}>
             Contact us
           </a>
+          <a href="/gallery" className={"menu__item " + isActive.gallery}>
+            Gallery
+          </a>
         </div>
       </div>
     </nav>

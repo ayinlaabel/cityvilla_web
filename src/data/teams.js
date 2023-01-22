@@ -1,6 +1,6 @@
 export const teams = [
   {
-    title: "Ezekiel Lola O.",
+    title: "Odebunmi Ezekiel Lola",
     location: "Managing Director",
   },
   {
