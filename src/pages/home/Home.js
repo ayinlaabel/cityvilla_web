@@ -9,7 +9,7 @@ import { data } from "../../data/nowselling";
 import { useDispatch } from "react-redux";
 import { active } from "../../redux/navbarSlice";
 import CardImage from "../../components/card/CardImage";
-import cityvillaVideo from "../../components/videos/cityvilla_video.mp4";
+// import cityvillaVideo from "../../components/videos/cityvilla_video.mp4";
 
 function Home() {
   const dispatch = useDispatch();

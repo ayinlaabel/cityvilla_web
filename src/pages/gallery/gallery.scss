@@ -1,8 +1,12 @@
+@import "../../components/scss/color";
+
 .gallery {
   height: 100%;
   width: 1000px;
   margin: 10px auto;
   padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .gallery__card {
@@ -10,7 +14,9 @@
   background: #fff;
   width: 200px;
   border-radius: 8px;
-  box-shadow: 5px 8px 25px #444;
+  box-shadow: 5px 3px 15px lighten(#444, 40);
+  margin: 10px;
+  cursor: pointer;
 
   & img {
     height: 100%;
@@ -20,6 +26,38 @@
 
     &:hover {
       transform: scale(1.1);
+    }
+  }
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background: $primary-color;
+  width: 500px;
+  border-radius: 50px;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-item {
+    font-weight: 400;
+    min-width: 125px;
+    padding: 10px;
+    text-align: center;
+    transition: all 0.9s ease-in-out;
+    color: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+
+    &.active {
+      background: $secondary-color;
+      color: $primary-color;
     }
   }
 }
