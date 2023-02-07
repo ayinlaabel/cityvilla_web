@@ -4,11 +4,9 @@ import { useDispatch } from 'react-redux';
 import Jombotron from '../../components/jombotron/Jombotron';
 import coverImage from '../../components/images/bg_contact.jpg';
 import { active } from '../../redux/navbarSlice';
-// import image from "../../components/images/AbujaHouse.jpeg";
 import './gallery.scss';
 import { galleryImage } from '../../data/images';
 import { useState } from 'react';
-import DisplayImage from '../../components/displayImage/DisplayImage';
 import {
   ClosePreview,
   Container,
@@ -17,7 +15,6 @@ import {
   PreviewButtonBack,
   PreviewButtonFront,
 } from '../../components/displayImage/display';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Gallery() {
   const dispatch = useDispatch();
