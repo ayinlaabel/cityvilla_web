@@ -35,14 +35,14 @@ function Navbar() {
   };
   return (
     <nav className="">
-      <div className="w-full h-[10rem] bg-gradient-to-r from-[#fff] from-[20rem] to-[20rem] to-[#010e00] flex">
-        <div className="w-[20rem] flex items-center justify-center">
+      <div className="w-full md:h-[10rem] h-[5rem] bg-[#010e00] md:bg-gradient-to-r from-[#fff] from-[20rem] to-[20rem] to-[#010e00] flex">
+        <div className="md:w-[20rem] w-[15rem] flex items-center justify-center">
           <img src={logo} />
         </div>
-        <div className="flex">
+        <div className="hidden md:flex ">
           <div className="p-4 flex items-center h-full">
-            <div className="w-[80px] h-[80px] text-[#fff]  rounded-full border-[#fff] border-2 flex items-center justify-center mr-4">
-              <i className="fa-solid fa-phone text-[25px]"></i>
+            <div className="w-[60px] h-[60px] text-[#fff]  rounded-full border-[#fff] border-2 flex items-center justify-center mr-4">
+              <i className="fa-solid fa-phone text-[20px]"></i>
             </div>
             <div className="text-[#fff]">
               <div>+234 801 234 5678</div>
@@ -50,8 +50,8 @@ function Navbar() {
             </div>
           </div>
           <div className="p-4 flex items-center h-full">
-            <div className="w-[80px] h-[80px] text-[#fff]  rounded-full border-[#fff] border-2 flex items-center justify-center mr-4">
-              <i className="fa-solid fa-location-dot text-[25px]"></i>
+            <div className="w-[60px] h-[60px] text-[#fff]  rounded-full border-[#fff] border-2 flex items-center justify-center mr-4">
+              <i className="fa-solid fa-location-dot text-[20px]"></i>
             </div>
             <div className="text-[#fff]">
               <div>+234 801 234 5678</div>
@@ -60,7 +60,8 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <div className="bg-[#fbb000] w-full h-[80px]">
+
+      <div className="hidden md:flex bg-[#fbb000] w-full md:h-[80px] h-[0px] transition-all ease-in-out">
         <ul className="flex items-center h-full text-[20px] px-9 text-[#fff]">
           <li className="px-4 hover:cursor-pointer">Home</li>
           <li className="px-4">Projects</li>
