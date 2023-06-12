@@ -10,6 +10,7 @@ function Navbar() {
   const ref = useRef(null);
   let menuOpen = false;
 
+// eslint-disable-next-line
   const handleMenu = () => {
     const btnLine = document.querySelectorAll(".btn__line");
     if (menuOpen === false) {
@@ -37,7 +38,7 @@ function Navbar() {
     <nav className="">
       <div className="w-full md:h-[10rem] h-[5rem] bg-[#010e00] md:bg-gradient-to-r from-[#fff] from-[20rem] to-[20rem] to-[#010e00] flex">
         <div className="md:w-[20rem] w-[15rem] flex items-center justify-center">
-          <img src={logo} />
+          <img src={logo} alt="" />
         </div>
         <div className="hidden md:flex ">
           <div className="p-4 flex items-center h-full">
